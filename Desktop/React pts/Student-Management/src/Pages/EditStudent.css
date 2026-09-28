@@ -1,0 +1,107 @@
+.edit-student {
+    width: 100%;
+    min-height: 80vh;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.edit-student h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.edit-student-form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.edit-student-form input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.edit-student-form input:focus {
+    border-color: blue;
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.edit-buttons button {
+    width: 150px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.update-btn {
+    background-color: black;
+}
+
+.update-btn:hover {
+    background-color: blue;
+}
+
+.cancel-btn {
+    background-color: gray;
+}
+
+.cancel-btn:hover {
+    background-color: black;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .edit-student {
+        padding: 20px 10px;
+    }
+
+    .edit-student h1 {
+        font-size: 25px;
+    }
+
+    .edit-student-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .edit-student-form input {
+        font-size: 14px;
+    }
+
+    .edit-buttons {
+        flex-direction: column;
+    }
+
+    .edit-buttons button {
+        width: 100%;
+        font-size: 14px;
+    }
+}

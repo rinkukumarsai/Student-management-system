@@ -1,0 +1,130 @@
+
+input {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+.student-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+
+.student-card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.student-card:hover {
+    transform: scale(1.03);
+    color: blue;
+    background-color: darkgray;
+}
+
+
+/* Student Name */
+.student-card h4 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+
+/* Email and City */
+.student-card h6 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+
+/* Button */
+.student-card button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+.student-card button:hover {
+    background-color:green;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .student-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .student-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 15px;
+    }
+
+    .student-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .student-card h4 {
+        font-size: 18px;
+    }
+
+    .student-card h6 {
+        font-size: 13px;
+    }
+
+    .student-card button {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,83 @@
+.add-student {
+    width: 100%;
+    min-height: 80vh;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.add-student h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.student-form {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+ input {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.student-form input:focus {
+    border-color: blue;
+}
+
+.add-btn {
+    width: 150px;
+    padding: 12px;
+    margin: 10px auto 0;
+        /* margin-left: 515px; */
+    border: none;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.add-btn:hover {
+    background-color: blue;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .add-student {
+        padding: 20px 10px;
+    }
+
+    .add-student h1 {
+        font-size: 25px;
+    }
+
+    .student-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .student-form input {
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    .add-btn {
+        font-size: 9px;
+    }
+}

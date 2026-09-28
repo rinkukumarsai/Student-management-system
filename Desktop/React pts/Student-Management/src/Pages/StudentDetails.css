@@ -1,0 +1,109 @@
+.student-details-card {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    box-sizing: border-box;
+
+    border-radius: 12px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+
+    background-color: white;
+}
+
+
+/* Student Name */
+
+.student-details-card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Student Information */
+
+.student-details-card p {
+    margin: 12px 0;
+    font-size: 18px;
+    word-break: break-word;
+}
+
+
+/* All Buttons */
+
+.student-details-card button {
+    width: 180px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.student-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* Edit Button */
+
+.edit-student-btn {
+    background-color: #007bff;
+    margin-top: 20px;
+}
+
+.edit-student-btn:hover {
+    background-color: red;
+}
+
+
+/* Delete Button */
+
+.delete-student-btn {
+    background-color: red;
+}
+
+.delete-student-btn:hover {
+    background-color: darkred;
+}
+
+
+/* Go Back Button */
+
+.go-back-btn {
+    background-color: #007bff;
+}
+
+.go-back-btn:hover {
+    background-color: magenta;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .student-details-card {
+        width: 95%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .student-details-card h2 {
+        font-size: 24px;
+    }
+
+    .student-details-card p {
+        font-size: 15px;
+    }
+
+    .student-details-card button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
